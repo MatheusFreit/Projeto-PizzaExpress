@@ -12,7 +12,7 @@ main{
     width: 49%;
     border-radius: 3%;
     position: absolute; /* Alterado de absolute para relative */
-    background: #7d7a73a5 ;
+    background: #7d7a736a ;
     margin-left: 5%; /* Alterado de left para margin-left */
 }
 
@@ -138,6 +138,50 @@ mat-card-content{
     margin-left: 0px;
 
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 20px;
+        height: 85.1vh; /* Ajusta o espaçamento interno da main para telas menores */
+    }
+
+    .card1{
+        width: 100%; /* Faz as cards ocuparem 100% da largura da tela */
+        margin: auto;
+        max-width: 88%;
+        height: 27vh;
+        background-color: white;
+    }
+    .card2 {
+        width: 100%; /* Faz as cards ocuparem 100% da largura da tela */
+        margin: auto;
+        max-width: 88%;
+        height: 51vh;
+        left: 0%;
+        top: 37%;
+        background-color: white;
+    }
+    .w-100[_ngcontent-ng-c8917358] {
+       left: 1%;
+    }
+
+    
+    mat-card-content {
+        width: 100%; /* Faz o conteúdo da mat-card ocupar 100% da largura */
+    }
+
+    .img-thumbnail {
+        width: 150px; /* Reduz o tamanho da imagem para telas menores */
+    }
+
+    .carousel-indicators {
+        left: 30%;   
+         margin-bottom: -1px;
+        transform: translateX(-45%);
+    }
+}
+
 
 
 

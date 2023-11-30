@@ -17,13 +17,13 @@ export class FazendoPedidosComponent implements OnInit {
    PedidosForm!: FormGroup ;
    horizontalPosition: MatSnackBarHorizontalPosition = 'center';
    verticalPosition: MatSnackBarVerticalPosition = 'top';
-  
-   
+   mostrarSegundoFormulario = false;
+   dadosPrimeiroFormulario: any;
+
+
   constructor(private _snackBar: MatSnackBar, private pedidosService : pedidosService, private formBuilder: FormBuilder){  }
 
   ngOnInit(): void {
-
-
 
     this.pedidosService.obterUltimoId().subscribe(ultimoId => {
       const novoId = ultimoId + 1;
@@ -36,7 +36,7 @@ export class FazendoPedidosComponent implements OnInit {
         Massas: new FormControl(this.dadosdoPedidos?.Massas || "", [Validators.required]),
         Sabores: new FormControl(this.dadosdoPedidos?.sabores || "", [Validators.required]),
         Sabores2: new FormControl(this.dadosdoPedidos?.sabores2 || "", [Validators.required]),
-        Situacao: new FormControl("Em Preparacao"),
+        Situacao: new FormControl("Em producao"),
         endereco: this.formBuilder.group({
           rua: new FormControl(this.dadosdoPedidos?.endereco?.rua || "", [Validators.required]),
           numero: new FormControl(this.dadosdoPedidos?.endereco?.numero || "", [Validators.required]),
@@ -65,6 +65,18 @@ export class FazendoPedidosComponent implements OnInit {
     });
 
   }
+  PreencherFormulario(){
+    this.dadosPrimeiroFormulario = this.PedidosForm.value;
+    
+  }
+
+  AtualizandoaPagina(){
+    setTimeout(() => {
+      window.location.reload();
+    }, 5000);
+  }
+
+
 }
 
 /*

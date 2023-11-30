@@ -10,12 +10,11 @@
       "sabores2": "milho",
       "Situacao": "Em producao",
       "DatadeCriacao": "2023-12-27T21:55:28.097",
-      "endereco":  {
-          "rua": "Porto Alegre",
-          "numero": "1234",
-          "bairro": "H. Jorge"
-        }
-      
+      "endereco": {
+        "rua": "Porto Alegre",
+        "numero": "1234",
+        "bairro": "H. Jorge"
+      }
     },
     {
       "id": 2,
@@ -25,15 +24,13 @@
       "Massas": "temperada",
       "sabores": "Frango",
       "sabores2": "milho",
-      "Situacao": "Em producao",
+      "Situacao": "Saindo para entrega",
       "DatadeCriacao": "2023-01-27T21:55:28.097",
-      "endereco": 
-        {
-          "rua": "Natal",
-          "numero": "1234",
-          "bairro": "H. Jorge"
-        }
-      
+      "endereco": {
+        "rua": "Natal",
+        "numero": "1234",
+        "bairro": "H. Jorge"
+      }
     },
     {
       "id": 3,
@@ -45,13 +42,11 @@
       "sabores2": "milho",
       "Situacao": "Em producao",
       "DatadeCriacao": "2023-01-17T21:55:28.097 ",
-      "endereco": 
-        {
-          "rua": "Manaus",
-          "numero": "1234",
-          "bairro": "H. Jorge"
-        }
-      
+      "endereco": {
+        "rua": "Manaus",
+        "numero": "1234",
+        "bairro": "H. Jorge"
+      }
     },
     {
       "id": 4,
@@ -63,13 +58,11 @@
       "Sabores2": "Marguerita",
       "Situacao": "Pedido finalizado",
       "DatadeCriacao": "2023-10-27T21:55:28.097",
-      "endereco": 
-        {
-          "rua": "Rio Grande do Norte",
-          "numero": "1234",
-          "bairro": "H. Jorge"
-        }
-      
+      "endereco": {
+        "rua": "Rio Grande do Norte",
+        "numero": "1234",
+        "bairro": "H. Jorge"
+      }
     },
     {
       "id": 5,
@@ -81,13 +74,11 @@
       "Sabores2": "Calabresa",
       "Situacao": "Em producao",
       "DatadeCriacao": "2023-11-27T22:01:00.139",
-      "endereco": 
-        {
-          "rua": "Porto Alegre",
-          "numero": "1234",
-          "bairro": "H. Jorge"
-        }
-      
+      "endereco": {
+        "rua": "Porto Alegre",
+        "numero": "1234",
+        "bairro": "H. Jorge"
+      }
     },
     {
       "id": 6,
@@ -99,13 +90,11 @@
       "Sabores2": "Frango_com_catupiry",
       "Situacao": "Em producao",
       "DatadeCriacao": "2023-11-28T14:14:24.792",
-      "endereco": 
-        {
-          "rua": "Rio Grande do sul",
-          "numero": "1234",
-          "bairro": "H. Jorge"
-        }
-      
+      "endereco": {
+        "rua": "Rio Grande do sul",
+        "numero": "1234",
+        "bairro": "H. Jorge"
+      }
     },
     {
       "id": 7,
@@ -117,13 +106,12 @@
       "Sabores2": "Marguerita",
       "Situacao": "Pedido finalizado",
       "DatadeCriacao": "2023-11-28T14:16:29.876",
-      "endereco": 
-        {
-          "rua": "Teresina",
-          "numero": "1234",
-          "bairro": "H. Jorge"
-        }
       
+      "endereco": {
+        "rua": "Teresina",
+        "numero": "1234",
+        "bairro": "H. Jorge"
+      }
     },
     {
       "id": 8,
@@ -133,26 +121,28 @@
       "Massas": "Massa_Temperada",
       "Sabores": "Marguerita",
       "Sabores2": "Frango_com_catupiry",
-      "rua": "Jovem",
-      "numero": "12",
-      "bairro": "montese",
-      "dataDeCriação": "2023-11-28T19:25:54.352Z"
+      "Situacao": "Em producao",
+      "endereco": {
+        "rua": "Teresina",
+        "numero": "1234",
+        "bairro": "H. Jorge"
+      }
     },
     {
       "id": 9,
-      "name": "as",
-      "sobrenome": "as",
+      "name": "matheus",
+      "sobrenome": "freitas",
       "Bordas": "Catupiry",
       "Massas": "Massa_Temperada",
-      "Sabores": "Calabresa",
-      "Sabores2": "Calabresa",
-      "Situacao": "Em Preparacao",
+      "Sabores": "Frango com catupiry",
+      "Sabores2": "Quatro queijos",
+      "Situacao": "Em producao",
       "endereco": {
-        "rua": "asa",
-        "numero": "121",
-        "bairro": "as"
+        "rua": "jorges",
+        "numero": "15",
+        "bairro": "joao 23"
       },
-      "dataDeCriacao": "2023-11-28T21:55:24.902Z"
+      "dataDeCriacao": "2023-11-30T12:58:27.399Z"
     }
   ]
 }

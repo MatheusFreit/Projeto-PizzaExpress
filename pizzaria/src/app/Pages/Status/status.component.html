@@ -1,5 +1,5 @@
 <app-toolbar></app-toolbar>
-<main>
+<main >
     <mat-card class="card2">
         <div>
             <h1>Detalhes do Pedido</h1>
@@ -10,7 +10,21 @@
             <mat-label for="">ID: </mat-label>
             <input matInput type="text" id="idUsuario" [(ngModel)]="idUsuario" required="">
             </mat-form-field>
-       
+
+            <div class="input-box">
+                <mat-form-field> 
+                <mat-label for="">Nome: </mat-label>
+                <input matInput type="text" value="" disabled>
+                </mat-form-field>
+                
+            </div>
+            <div class="input-box">
+                <mat-form-field>
+                <mat-label for="">Situação: </mat-label>
+                <input matInput type="text" value="" disabled>
+                </mat-form-field>
+            </div>
+        
 
         <button mat-raised-button color="warn" (click)="realizarPesquisa()">Pesquisar</button>
         </div>
@@ -62,6 +76,8 @@
                     <input matInput type="text" [value]="getSituacaoLabel()" disabled>
                     </mat-form-field>
                 </div>
+                <div class="custom-loader"  [ngClass]="{'red': isEmProducao(), 'yellow': isSaindoParaEntrega(), 'green': isPedidoFinalizado()}"></div>
+
                 <div class="input-box">
                     <mat-form-field>
                     <mat-label for="">Data de Criação: </mat-label>

@@ -1,7 +1,7 @@
 <main>
     <mat-card>
         <h1>{{btnTitulo}}</h1>
-        <form [formGroup]="PedidosForm" *ngIf="PedidosForm" (ngSubmit) = "submit()" #formDit = "ngForm">
+        <form [formGroup]="PedidosForm" *ngIf="!mostrarSegundoFormulario"  #formDit = "ngForm">
            
             <input type="hidden" formControlName="id">
         
@@ -44,9 +44,9 @@
                     <mat-option value="Calabresa">Calabresa </mat-option>
                     <mat-option value="Portuguesa">Portuguesa</mat-option>
                     <mat-option value="Marguerita">Marguerita</mat-option>
-                    <mat-option value="Frango_com_catupiry">Frango com catupiry</mat-option>
+                    <mat-option value="Frango com catupiry">Frango com catupiry</mat-option>
                     <mat-option value="Muçarela">Muçarela</mat-option>
-                    <mat-option value="Quatro_queijos">Quatro queijos</mat-option>
+                    <mat-option value="Quatro queijos">Quatro queijos</mat-option>
                     <mat-option value="Milho">Milho</mat-option>
                     <mat-option value="Baiana">Baiana</mat-option>
                     </mat-select>
@@ -59,9 +59,9 @@
                     <mat-option value="Calabresa">Calabresa </mat-option>
                     <mat-option value="Portuguesa">Portuguesa</mat-option>
                     <mat-option value="Marguerita">Marguerita</mat-option>
-                    <mat-option value="Frango_com_catupiry">Frango com catupiry</mat-option>
+                    <mat-option value="Frango com catupiry">Frango com catupiry</mat-option>
                     <mat-option value="Muçarela">Muçarela</mat-option>
-                    <mat-option value="Quatro_queijos">Quatro queijos</mat-option>
+                    <mat-option value="Quatro queijos">Quatro queijos</mat-option>
                     <mat-option value="Milho">Milho</mat-option>
                     <mat-option value="Baiana">Baiana</mat-option>
                     </mat-select>
@@ -73,26 +73,50 @@
                   <mat-label for="">Rua:</mat-label>
                   <input matInput type="text" formControlName="rua" placeholder="Insira o nome da rua!" required>
                 </mat-form-field>
-              </div>
+            </div>
               
-              <div class="input_box">
+            <div class="input_box">
                 <mat-form-field class="example-full-width" formGroupName="endereco">
                   <mat-label for="">Número:</mat-label>
                   <input matInput type="text" formControlName="numero" placeholder="Insira o numero da casa!" required>
                 </mat-form-field>
-              </div>
+            </div>
               
-              <div class="input_box">
+            <div class="input_box">
                 <mat-form-field class="example-full-width" formGroupName="endereco">
                   <mat-label for="">Bairro:</mat-label>
                   <input matInput type="text" formControlName="bairro" placeholder="Insira o Bairro!" required>
                 </mat-form-field>
-              </div>
-            
-            <div class="btn-box">
-                <button type="submit" [disabled]="!PedidosForm.valid" mat-raised-button color="warn">pedido</button>
-                <button type="submit" routerLink="" mat-raised-button >Voltar</button>
             </div>
-        </form>
+            <div class="btn-box">
+                <button type="submit" routerLink="" mat-raised-button >Voltar</button>
+                <button type="button" (click)="mostrarSegundoFormulario = true; PreencherFormulario() "
+                mat-raised-button style="background-color: rgba(255, 0, 0, 0.695);">Finalizar Pedido</button>
+            </div>
+
+    </form>
+    <form  (ngSubmit)="submit()" *ngIf="mostrarSegundoFormulario">
+        <mat-form-field class="example-full-width">
+            <mat-label>Número do Pedido</mat-label>
+            <input matInput disabled value="{{dadosPrimeiroFormulario.id}}">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Bordas</mat-label>
+            <input matInput disabled value="{{dadosPrimeiroFormulario.Bordas}}">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Massas</mat-label>
+            <input matInput disabled value="{{dadosPrimeiroFormulario.Massas}}">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Sabores</mat-label>
+            <input matInput disabled value="{{dadosPrimeiroFormulario.Sabores}} - {{dadosPrimeiroFormulario.Sabores2}} ">
+          </mat-form-field>
+
+        <div class="btn-box">
+            <button type="button" (click)="mostrarSegundoFormulario = false" mat-raised-button>Voltar</button>
+            <button type="submit" [disabled]="!PedidosForm.valid"  (click)="submit(); AtualizandoaPagina()" mat-raised-button color="warn">Fazer o Pedido</button>
+        </div>
+    </form>
     </mat-card>
 </main>

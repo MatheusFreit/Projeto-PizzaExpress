@@ -137,10 +137,6 @@ h1{
 	margin-right: 3%;
 }
 
-
-
-
-
 /* Explore, Saboreie, Divirta-se! */
 
 .texto-exp{
@@ -167,5 +163,81 @@ h1{
 .container-parte4{
 	display: flex;
 	padding: 10px;
+
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  /* Adicione estilos específicos para larguras menores que 600 pixels aqui */
+  #mainSlider[_ngcontent-ng-c2115902557] .carousel-caption[_ngcontent-ng-c2115902557] h2[_ngcontent-ng-c2115902557] {
+	width: 100%;
+    margin-top: -93%;
+}
+#mainSlider[_ngcontent-ng-c2115902557] .carousel-caption[_ngcontent-ng-c2115902557] {
+    top: 80%;
+}
+#mainSlider .carousel-caption h2 {
+    /* Remova a propriedade font-size ou defina como inherit */
+	font-size: 20px;
+    margin-bottom: 9px;
+	color: #f7f3f3;
+}
+#mainSlider[_ngcontent-ng-c390542605] .carousel-caption[_ngcontent-ng-c390542605] {
+    top: -2%;
+}
+
+#mainSlider .carousel-caption p {
+	font-size: 14px; /* Reduza o tamanho da fonte para telas menores */
+	margin-bottom: 50px;
+	color: #f7f3f3;
+	/* Ajuste a margem inferior conforme necessário */
+}
+.carousel-indicators{
+	margin-bottom: 50px;
+}
+
+#mainSlider[_ngcontent-ng-c2115902557] .carousel-inner[_ngcontent-ng-c2115902557], #mainSlider[_ngcontent-ng-c2115902557] .carousel-item[_ngcontent-ng-c2115902557] {
+    height: 33vh;
+}
+
+
+.carousel-control-prev,.carousel-indicators,.carousel-caption d-md-block,
+.carousel-control-next {
+	display: none; /* Esconde os controles de navegação */
+}
+
+
+  .foto-logo,
+  .foto-logo20,
+  .foto-logo3{
+	display: none
+  }
+
+  .container-parte12{
+	flex:none;
+  }
+	.container-parte3{
+		margin: 0;
+	}
+
+	.container-parte12{
+		margin: 0;
+	}
+	.container-parte1{
+		top:10px;
+	}
+  /* Adapte outros estilos conforme necessário para uma melhor experiência em telas menores */
+  h1 {
+	  font-size: 20px;
+	   /* Reduza o tamanho da fonte para melhor ajuste em telas menores */
+  }
+
+  .container-parte1,
+  .container-parte2,
+  .container-parte3,
+  .container-parte4 {
+	  flex-direction: column; /* Mude a direção do flex para coluna em telas menores */
+	  align-items: center; /* Alinhe os itens ao centro */
+  }
 
 }

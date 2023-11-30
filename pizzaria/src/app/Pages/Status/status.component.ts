@@ -57,6 +57,17 @@ export class StatusComponent implements OnInit {
         return 'Situação desconhecida';
     }
   }
+  isEmProducao(): boolean {
+    return this.DadosPedidos?.Situacao === 'Em producao';
+  }
+  
+  isSaindoParaEntrega(): boolean {
+    return this.DadosPedidos?.Situacao === 'Saindo para entrega';
+  }
+  
+  isPedidoFinalizado(): boolean {
+    return this.DadosPedidos?.Situacao === 'Pedido finalizado';
+  }
 
   AtualizandoaPagina(){
     window.location.reload();
