@@ -1,0 +1,158 @@
+{
+  "Pedidos": [
+    {
+      "id": 1,
+      "name": "Matheus",
+      "sobrenome": "Freitas",
+      "bordas": "chocolate",
+      "Massas": "temperada",
+      "sabores": "Frango",
+      "sabores2": "milho",
+      "Situacao": "Em producao",
+      "DatadeCriacao": "2023-12-27T21:55:28.097",
+      "endereco":  {
+          "rua": "Porto Alegre",
+          "numero": "1234",
+          "bairro": "H. Jorge"
+        }
+      
+    },
+    {
+      "id": 2,
+      "name": "Lucas",
+      "sobrenome": "Freitas",
+      "bordas": "chocolate",
+      "Massas": "temperada",
+      "sabores": "Frango",
+      "sabores2": "milho",
+      "Situacao": "Em producao",
+      "DatadeCriacao": "2023-01-27T21:55:28.097",
+      "endereco": 
+        {
+          "rua": "Natal",
+          "numero": "1234",
+          "bairro": "H. Jorge"
+        }
+      
+    },
+    {
+      "id": 3,
+      "name": "Larrisa",
+      "sobrenome": "Freitas",
+      "bordas": "chocolate",
+      "Massas": "temperada",
+      "sabores": "Frango",
+      "sabores2": "milho",
+      "Situacao": "Em producao",
+      "DatadeCriacao": "2023-01-17T21:55:28.097 ",
+      "endereco": 
+        {
+          "rua": "Manaus",
+          "numero": "1234",
+          "bairro": "H. Jorge"
+        }
+      
+    },
+    {
+      "id": 4,
+      "name": "matheus",
+      "sobrenome": "Albuquerque",
+      "Bordas": "Chocolate",
+      "Massas": "Massa_Integral",
+      "Sabores": "Portuguesa",
+      "Sabores2": "Marguerita",
+      "Situacao": "Pedido finalizado",
+      "DatadeCriacao": "2023-10-27T21:55:28.097",
+      "endereco": 
+        {
+          "rua": "Rio Grande do Norte",
+          "numero": "1234",
+          "bairro": "H. Jorge"
+        }
+      
+    },
+    {
+      "id": 5,
+      "name": "Bruno",
+      "sobrenome": "Braga",
+      "Bordas": "Catupiry",
+      "Massas": "Massa_Temperada",
+      "Sabores": "Calabresa",
+      "Sabores2": "Calabresa",
+      "Situacao": "Em producao",
+      "DatadeCriacao": "2023-11-27T22:01:00.139",
+      "endereco": 
+        {
+          "rua": "Porto Alegre",
+          "numero": "1234",
+          "bairro": "H. Jorge"
+        }
+      
+    },
+    {
+      "id": 6,
+      "name": "Freitas",
+      "sobrenome": "Joao",
+      "Bordas": "Cheddar",
+      "Massas": "Massa_Temperada",
+      "Sabores": "Baiana",
+      "Sabores2": "Frango_com_catupiry",
+      "Situacao": "Em producao",
+      "DatadeCriacao": "2023-11-28T14:14:24.792",
+      "endereco": 
+        {
+          "rua": "Rio Grande do sul",
+          "numero": "1234",
+          "bairro": "H. Jorge"
+        }
+      
+    },
+    {
+      "id": 7,
+      "name": "Matheus",
+      "sobrenome": "Medeiros",
+      "Bordas": "Chocolate",
+      "Massas": "Massa_Temperada",
+      "Sabores": "Calabresa",
+      "Sabores2": "Marguerita",
+      "Situacao": "Pedido finalizado",
+      "DatadeCriacao": "2023-11-28T14:16:29.876",
+      "endereco": 
+        {
+          "rua": "Teresina",
+          "numero": "1234",
+          "bairro": "H. Jorge"
+        }
+      
+    },
+    {
+      "id": 8,
+      "name": "Larrisa",
+      "sobrenome": "nayara",
+      "Bordas": "Catupiry",
+      "Massas": "Massa_Temperada",
+      "Sabores": "Marguerita",
+      "Sabores2": "Frango_com_catupiry",
+      "rua": "Jovem",
+      "numero": "12",
+      "bairro": "montese",
+      "dataDeCriação": "2023-11-28T19:25:54.352Z"
+    },
+    {
+      "id": 9,
+      "name": "as",
+      "sobrenome": "as",
+      "Bordas": "Catupiry",
+      "Massas": "Massa_Temperada",
+      "Sabores": "Calabresa",
+      "Sabores2": "Calabresa",
+      "Situacao": "Em Preparacao",
+      "endereco": {
+        "rua": "asa",
+        "numero": "121",
+        "bairro": "as"
+      },
+      "dataDeCriacao": "2023-11-28T21:55:24.902Z"
+    }
+  ]
+}

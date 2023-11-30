@@ -1,0 +1,98 @@
+<main>
+    <mat-card>
+        <h1>{{btnTitulo}}</h1>
+        <form [formGroup]="PedidosForm" *ngIf="PedidosForm" (ngSubmit) = "submit()" #formDit = "ngForm">
+           
+            <input type="hidden" formControlName="id">
+        
+            <div class="input_box">
+                <mat-form-field  class="example-full-width">
+                    <mat-label for="">Nome: </mat-label>
+                    <input  matInput type="text"formControlName="name" placeholder="Insira o nome!" required>
+                </mat-form-field>
+            </div>
+            <div class="input_box">
+                <mat-form-field   class="example-full-width">
+                <mat-label for="">Sobrenome: </mat-label>
+                <input matInput type="text"formControlName="sobrenome" placeholder="Insira o Sobrenome!" required>
+                </mat-form-field>
+            </div>
+            <div class="input_box">
+                <mat-form-field  >
+                <mat-label for="">Bordas:</mat-label>
+                    <mat-select id="Bordas" formControlName="Bordas" required>
+                        <mat-option value="Catupiry">Catupiry</mat-option>
+                        <mat-option value="Chocolate">Chocolate</mat-option>
+                        <mat-option value="Cheddar">Cheddar</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="input_box">
+                <mat-form-field  >
+                <mat-label for="">Massas:</mat-label>
+                <mat-select id="Massas" formControlName="Massas" required>
+                    <mat-option value="Massa_Temperada">Massa Temperada </mat-option>
+                    <mat-option value="Massa_Integral">Massa Integral</mat-option>
+                    <mat-option value="Massa_Normal">Massa Normal </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="input_box">
+                <mat-form-field  >
+                <mat-label for="">Sabores 1:</mat-label>
+                <mat-select id="Sabores" formControlName="Sabores" required>
+                    <mat-option value="Calabresa">Calabresa </mat-option>
+                    <mat-option value="Portuguesa">Portuguesa</mat-option>
+                    <mat-option value="Marguerita">Marguerita</mat-option>
+                    <mat-option value="Frango_com_catupiry">Frango com catupiry</mat-option>
+                    <mat-option value="Muçarela">Muçarela</mat-option>
+                    <mat-option value="Quatro_queijos">Quatro queijos</mat-option>
+                    <mat-option value="Milho">Milho</mat-option>
+                    <mat-option value="Baiana">Baiana</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="input_box">
+                <mat-form-field  >
+                <mat-label for="">Sabores 2:</mat-label>
+               <mat-select id="Sabores2" formControlName="Sabores2" required>
+                    <mat-option value="Calabresa">Calabresa </mat-option>
+                    <mat-option value="Portuguesa">Portuguesa</mat-option>
+                    <mat-option value="Marguerita">Marguerita</mat-option>
+                    <mat-option value="Frango_com_catupiry">Frango com catupiry</mat-option>
+                    <mat-option value="Muçarela">Muçarela</mat-option>
+                    <mat-option value="Quatro_queijos">Quatro queijos</mat-option>
+                    <mat-option value="Milho">Milho</mat-option>
+                    <mat-option value="Baiana">Baiana</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            
+            <div class="input_box">
+                <mat-form-field class="example-full-width" formGroupName="endereco">
+                  <mat-label for="">Rua:</mat-label>
+                  <input matInput type="text" formControlName="rua" placeholder="Insira o nome da rua!" required>
+                </mat-form-field>
+              </div>
+              
+              <div class="input_box">
+                <mat-form-field class="example-full-width" formGroupName="endereco">
+                  <mat-label for="">Número:</mat-label>
+                  <input matInput type="text" formControlName="numero" placeholder="Insira o numero da casa!" required>
+                </mat-form-field>
+              </div>
+              
+              <div class="input_box">
+                <mat-form-field class="example-full-width" formGroupName="endereco">
+                  <mat-label for="">Bairro:</mat-label>
+                  <input matInput type="text" formControlName="bairro" placeholder="Insira o Bairro!" required>
+                </mat-form-field>
+              </div>
+            
+            <div class="btn-box">
+                <button type="submit" [disabled]="!PedidosForm.valid" mat-raised-button color="warn">pedido</button>
+                <button type="submit" routerLink="" mat-raised-button >Voltar</button>
+            </div>
+        </form>
+    </mat-card>
+</main>

@@ -1,0 +1,145 @@
+main{
+    position: relative;
+    background: url('../../../assets/imagens/restaurante.jpeg') center/cover no-repeat; 
+    height: 81.1vh; /* Garante que a altura seja 100% da altura da tela */
+    background-size: cover; 
+    padding: 62px;
+}
+.card1{
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    width: 49%;
+    border-radius: 3%;
+    position: absolute; /* Alterado de absolute para relative */
+    background: #7d7a73a5 ;
+    margin-left: 5%; /* Alterado de left para margin-left */
+}
+
+.card2{
+   margin-top: 0%;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   display: flex;
+   width: 23%;
+   height: 30vw;
+   margin-left: 0%;
+   left: 72%;
+   border-radius: 3%;
+   background-color: #7d7a73a5 ;
+}
+
+mat-card-content{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 35%;
+    border-radius: 5%;
+    font-size: 26px;
+    padding-top: 13px;
+    padding-bottom: 18px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    background-color: white;
+    
+}
+
+.mat-mdc-card, .mdc-card{
+    padding: 8px;
+    height: 629px;
+    
+}
+.img-thumbnail{
+    border-radius: 50%;
+    width: 250px;
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    
+}
+.foto-logo20{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    top: -5px;
+    position: relative;
+}
+
+.foto-pizza{
+    display: flex;
+    justify-content: center;
+    width: 41%;
+    margin: 8px;
+    left: 5%;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.grande-foto{
+    width: 100px;
+}
+
+.container2{
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    justify-content: center;
+}
+
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+    transform: translateX(-50%);
+}
+
+.carousel-indicators li {
+    background-color: #888; /* Cor de fundo dos indicadores */
+    border: 1px solid #fff; /* Borda dos indicadores */
+    margin: 0 3px; /* Espaçamento entre os indicadores */
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    background-color: #555; /* Cor de fundo do indicador ativo */
+}
+.carousel-item {
+    width: 112%;
+}
+.carousel-inner{
+    display: flex;
+    right: 2%;
+    width: 101%;
+}
+.w-100 {
+    width: 88%!important;
+    border-radius: 2%;
+    position: relative;
+    left: 2%;
+}
+
+.carousel slide{
+      
+    margin-right: -56px;
+
+}
+
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+
+    
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right:  0px;
+    margin-left: 0px;
+
+}
+
+
+
+
+

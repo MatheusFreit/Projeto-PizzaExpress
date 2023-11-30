@@ -1,0 +1,171 @@
+/* Slider */
+
+h2{
+	font-size: 10px;
+	padding: 10px;
+}
+
+.container-fluid {
+	padding: 0;
+  }
+  
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+	height: 90vh;
+  }
+  
+  #mainSlider .carousel-caption {
+	top: 30%;
+  }
+  
+  #mainSlider .carousel-caption h2 {
+	font-size: 50px;
+	margin-bottom: 30px;
+  }
+  
+  #mainSlider .carousel-caption p {
+	font-size: 22px;
+	font-weight: 300;
+	margin-bottom: 100px;
+	color: #FFF;
+  }
+  
+  .main-btn {
+	background-color: #65DAF9;
+	color: #FFF;
+	text-transform: uppercase;
+	width: 200px;
+	height: 60px;
+	padding: 10px 20px;
+	border-radius: 30px;
+	border: 3px solid transparent;
+	transition: .5s;
+  }
+  
+  .main-btn:hover {
+	text-decoration: none;
+	color: #FFF;
+	background-color: transparent;
+	border-color: #3EC1D5;
+  }
+  
+  .carousel-indicators .active {
+	background-color: #65DAF9;
+  }
+  
+
+
+/* Conteudo */
+
+.controle{
+	background-color: #e7e7e723;
+	margin: 10px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+/* Para todos */
+p{
+	text-align: center;
+	
+}
+
+h1{	
+	text-align: center;
+	justify-content: center;
+	padding: 10px;
+	font-size: 26px;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom: 0px
+}
+
+
+/* bem-vindos */
+
+.container-parte11{
+	text-align: center;
+	margin-top:84px;
+	margin-bottom: 0px;
+}
+
+.container-parte1{
+	display: flex;
+}
+
+.foto-logo{
+	margin: 16px;
+    padding: 3px;
+	border-radius: 50%;
+	width: 90%;
+
+}
+.container-parte11{
+	text-align: center;
+	margin-top:84px;
+	margin-bottom: 0px;
+}
+
+/* Nossos Destaques */
+
+.container-parte2{
+	display: flex;
+}
+.foto-logo2 {
+    margin: 4px;
+    padding: 0px;
+    border-radius: 63%;
+    width: 80%;
+}
+
+.foto-logo20{
+	display: flex;
+	justify-content: center;
+}
+
+.container-parte12 {
+	display: flex;
+	padding: 10px;
+}
+
+.container-parte12 > div {
+	flex: 1;
+	padding: 10px; /* Adicionei um espaçamento interno para melhor visualização */
+}
+
+.texto-noss{
+	align-items: center;
+	margin-top: 2%;
+	margin-right: 3%;
+}
+
+
+
+
+
+/* Explore, Saboreie, Divirta-se! */
+
+.texto-exp{
+	align-items: center;
+	margin-top: 2%;
+	margin-right: 3%;
+	display: flex;
+	text-align: justify;
+
+}
+.foto-logo3{
+    margin: 4px;
+    padding: 0px;
+    border-radius: 63%;
+    width: 80%;
+}
+.container-parte3{
+	text-align: center;
+	margin-top: 25px;
+    margin-right: 10px;
+	margin-bottom: 0px;
+}
+
+.container-parte4{
+	display: flex;
+	padding: 10px;
+
+}

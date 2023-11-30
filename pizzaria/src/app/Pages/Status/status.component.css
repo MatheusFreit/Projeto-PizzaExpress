@@ -1,0 +1,59 @@
+main{
+    position: relative;
+    background: url('../../../assets/imagens/restaurante.jpeg') center/cover no-repeat; 
+    height: 84vh; /* Garante que a altura seja 100% da altura da tela */
+    background-size: cover; 
+    padding: 7px;
+}
+
+mat-card{
+    background: rgb(251, 251, 251);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5%;
+    padding: 10px;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+} 
+mat-form-field {
+    width: 500px;
+}
+
+.mdc-button{
+    margin: 8px 8px 8px 8px ;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        height: 100vh;
+    }
+    mat-card {
+        width: 100%; /* Ajuste a largura conforme necessário para telas menores */
+        left: 0%;
+        
+    }
+    mat-form-field {
+        width: 280px;
+}
+}
+@media screen and (max-width:  400px) {
+    main{
+        height: 110vh;
+        padding: 10px;
+        
+        
+    }
+    mat-card {
+        width: 82%; /* Ajuste a largura conforme necessário para telas menores */
+        height: 120vh;
+        
+        
+    }
+    mat-form-field {
+        width: 250px;
+        bottom: 10px;
+}
+}

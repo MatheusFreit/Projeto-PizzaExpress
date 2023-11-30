@@ -1,0 +1,89 @@
+<app-toolbar></app-toolbar>
+<main>
+    <mat-card class="card2">
+        <div>
+            <h1>Detalhes do Pedido</h1>
+        </div>
+             
+        <div *ngIf="!DadosPedidos" class="input-box">
+            <mat-form-field> 
+            <mat-label for="">ID: </mat-label>
+            <input matInput type="text" id="idUsuario" [(ngModel)]="idUsuario" required="">
+            </mat-form-field>
+       
+
+        <button mat-raised-button color="warn" (click)="realizarPesquisa()">Pesquisar</button>
+        </div>
+        
+        <div *ngIf="DadosPedidos">
+            <form >
+        
+
+                <div class="input-box">
+                    <mat-form-field> 
+                    <mat-label for="">Nome: </mat-label>
+                    <input matInput type="text" value="{{DadosPedidos.name}}" disabled>
+                    </mat-form-field>
+                    
+                </div>
+        
+        
+                <div class="input-box">
+                    <mat-form-field> 
+                    <mat-label for="">Sobrenome: </mat-label>
+                    <input matInput type="text" value="{{DadosPedidos.sobrenome}}"  disabled>
+                    </mat-form-field>
+                </div>
+        
+        
+                <div class="input-box">
+                    <mat-form-field>
+                    <mat-label for="">Bordas: </mat-label>
+                    <input  matInput type="text"value="{{DadosPedidos.Bordas}}" disabled>
+                    </mat-form-field>
+                </div>
+                <div class="input-box">
+                    <mat-form-field>
+                    <mat-label for="">Massas: </mat-label>
+                    <input matInput type="text" value="{{DadosPedidos.Massas}}" disabled>
+                    </mat-form-field>
+                </div>
+
+                <div class="input-box">
+                    <mat-form-field>
+                    <mat-label for="">Sabores: </mat-label>
+                    <input  matInput type="text" value="Sabor 1: {{DadosPedidos.sabores}} - Sabor 2: {{DadosPedidos.sabores2}}" disabled >
+                    </mat-form-field>
+                </div>
+
+                <div class="input-box">
+                    <mat-form-field>
+                    <mat-label for="">Situação: </mat-label>
+                    <input matInput type="text" [value]="getSituacaoLabel()" disabled>
+                    </mat-form-field>
+                </div>
+                <div class="input-box">
+                    <mat-form-field>
+                    <mat-label for="">Data de Criação: </mat-label>
+                    <input  matInput type="text" value="{{DadosPedidos.DatadeCriacao | date:'dd/MM/yyyy'}}" disabled>
+                    </mat-form-field>
+                </div>
+                <div class="input-box">
+                    <mat-form-field>
+                    <mat-label for="">Endereço: </mat-label>
+                    <input  matInput type="text" value="{{DadosPedidos.endereco.rua}} - {{DadosPedidos.endereco.numero}} - {{DadosPedidos.endereco.bairro}}" disabled>
+                    </mat-form-field>
+                </div>
+                
+        
+                <div class="btn-box">
+                    <button routerLink="" mat-raised-button> Voltar </button>
+                    <button mat-raised-button color="warn" (click)="AtualizandoaPagina()" >Pesquisar</button>
+                </div>
+            </form>
+        </div>
+        
+    </mat-card>
+</main>
+
+<app-footer></app-footer>
