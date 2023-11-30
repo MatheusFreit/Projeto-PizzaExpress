@@ -28,3 +28,10 @@ Bem-vindo ao repositório do PizzaExpress, um projeto web desenvolvido utilizand
 * Angular: Um poderoso framework para construção de aplicações web.
 * Angular Material: Componentes prontos para uso que seguem as diretrizes de Material Design.
 * Bootstrap: Framework de código aberto para design responsivo.
+
+## Considerações
+O projeto ainda não está concluído, e há planos para futuras atualizações. Uma das próximas etapas envolverá a criação de uma API de banco de dados em C#. Além disso, tenho a intenção de desenvolver a funcionalidade do gerente, permitindo que ele verifique, atualize e, eventualmente, exclua pedidos conforme necessário.
+
+Estou comprometido em aprimorar e expandir o sistema para garantir uma experiência abrangente e eficiente. Agradeço antecipadamente por qualquer feedback ou sugestão que possa contribuir para o sucesso contínuo deste projeto
+
+  
