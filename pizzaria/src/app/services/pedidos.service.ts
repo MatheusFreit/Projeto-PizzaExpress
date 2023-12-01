@@ -15,7 +15,21 @@ import { map } from 'rxjs/operators';
 
 export class pedidosService {
   private apiUrl = `${environment.ApiUrl}`;
+  private apiUrl2= `${environment.ApiUrl2}`;
+
+
   constructor(private http: HttpClient) { }
+
+  validarUsuarioSenha(username: string, password: string): Observable<boolean> {
+    const url = `${this.apiUrl2}`; // Substitua 'validarUsuarioSenha' com o endpoint real no seu backend
+
+    // Supondo que o backend espera um corpo de requisição com 'username' e 'password'
+    const body = { username, password };
+
+    // Faça a chamada HTTP para validar o usuário e senha
+    return this.http.post<boolean>(url, body);
+  
+  }
 
     //Atualiza o banco de pedidos
 

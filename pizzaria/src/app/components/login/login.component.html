@@ -31,13 +31,13 @@
         <mat-card-content>Login</mat-card-content>
         <mat-form-field>
             <mat-label>Username:</mat-label>
-            <input matInput>
+            <input matInput id="user">
         </mat-form-field>
         <mat-form-field>
             <mat-label>Password:</mat-label>
-            <input  matInput >
+            <input  matInput type="password" id="senh" >
         </mat-form-field>
-        <button mat-flat-button color="warn">Login</button>
+        <button mat-flat-button color="warn" (click)="Sistema()">Login</button>
     </mat-card>
 
 </main>  

@@ -10,7 +10,7 @@ import { ToolbarComponent } from './Pages/Parte inicial e final/toolbar/toolbar.
 import { FooterComponent } from './Pages/Parte inicial e final/footer/footer.component';
 import { SobreComponent } from './Pages/about/sobre.component';
 import { PedidosComponent } from './Pages/pedidos/pedidos.component';
-import { GerenciaComponent } from './Pages/manager/gerencia.component';
+import { GerenciaComponent } from './Pages/manager/pagina-login-gerencia/gerencia.component';
 import { StatusComponent } from './Pages/Status/status.component';
 import { LoginComponent } from './components/login/login.component';
 import { FazendoPedidosComponent } from './components/fazendo-pedidos/fazendo-pedidos.component';
@@ -18,6 +18,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
 import { pedidosService } from './services/pedidos.service';
 import { FormsModule } from '@angular/forms';
+import { PanielComponent } from './Pages/manager/Paniel/paniel.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     StatusComponent,
     LoginComponent,
     FazendoPedidosComponent,
-    
+    PanielComponent,
+       
    
   ],
   imports: [

@@ -88,7 +88,7 @@
       "Massas": "Massa_Temperada",
       "Sabores": "Baiana",
       "Sabores2": "Frango_com_catupiry",
-      "Situacao": "Em producao",
+      "Situacao": "Pedido finalizado",
       "DatadeCriacao": "2023-11-28T14:14:24.792",
       "endereco": {
         "rua": "Rio Grande do sul",
@@ -106,7 +106,6 @@
       "Sabores2": "Marguerita",
       "Situacao": "Pedido finalizado",
       "DatadeCriacao": "2023-11-28T14:16:29.876",
-      
       "endereco": {
         "rua": "Teresina",
         "numero": "1234",
@@ -143,6 +142,29 @@
         "bairro": "joao 23"
       },
       "dataDeCriacao": "2023-11-30T12:58:27.399Z"
+    },
+    {
+      "id": 10,
+      "name": "as",
+      "sobrenome": "as",
+      "Bordas": "Catupiry",
+      "Massas": "Massa_Temperada",
+      "Sabores": "Frango com catupiry",
+      "Sabores2": "Quatro queijos",
+      "Situacao": "Em producao",
+      "endereco": {
+        "rua": "as",
+        "numero": "as",
+        "bairro": "ass"
+      },
+      "dataDeCriacao": "2023-11-30T22:42:02.639Z"
+    }
+  ],
+  "Sistema": [
+    {
+      "id": 1,
+      "usuario": "admin",
+      "password": "112233"
     }
   ]
 }
