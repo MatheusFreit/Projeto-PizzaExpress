@@ -5,8 +5,8 @@ export interface pizzaria{
     sobrenome: string,
     Bordas: string,
     Massas:  string,
-    sabores: string,
-    sabores2: string,
+    Sabores: string,
+    Sabores2: string,
     Situacao: string,
     DatadeCriacao?: string,
     endereco:{
