@@ -34,8 +34,8 @@ export class FazendoPedidosComponent implements OnInit {
         sobrenome: new FormControl(this.dadosdoPedidos?.sobrenome || "", [Validators.required]),
         Bordas: new FormControl(this.dadosdoPedidos?.Bordas || "", [Validators.required]),
         Massas: new FormControl(this.dadosdoPedidos?.Massas || "", [Validators.required]),
-        Sabores: new FormControl(this.dadosdoPedidos?.sabores || "", [Validators.required]),
-        Sabores2: new FormControl(this.dadosdoPedidos?.sabores2 || "", [Validators.required]),
+        Sabores: new FormControl(this.dadosdoPedidos?.Sabores || "", [Validators.required]),
+        Sabores2: new FormControl(this.dadosdoPedidos?.Sabores2 || "", [Validators.required]),
         Situacao: new FormControl("Em producao"),
         endereco: this.formBuilder.group({
           rua: new FormControl(this.dadosdoPedidos?.endereco?.rua || "", [Validators.required]),
